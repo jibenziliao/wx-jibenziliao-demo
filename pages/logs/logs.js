@@ -1,12 +1,12 @@
 //logs.js
-var util = require('../../utils/util.js')
+const util = require('../../utils/util') 
 Page({
   data: {
     logs: []
   },
-  onLoad: function () {
+  onLoad () {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
+      logs: (wx.getStorageSync('logs') || []).map(log => {
         return util.formatTime(new Date(log))
       })
     })
