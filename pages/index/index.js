@@ -5,21 +5,7 @@ Page({
   data: {
     motto: '你好，世界！',
     userInfo: {},
-    menu: [
-      {
-        url: '../view/view',
-        text: 'view'
-      }, {
-        url: '../scroll-view/scroll-view',
-        text: 'scroll-view'
-      }, {
-        url: '../swiper/swiper',
-        text: 'swiper'
-      }, {
-        url: '../movable-view/movable-view',
-        text: 'movable-view'
-      }
-    ]
+    menu: []
   },
   // 跳转日志页
   goLogs () {
@@ -35,10 +21,11 @@ Page({
   },
   onLoad () {
     // 调用应用实例的方法获取全局数据
-    app.getUserInfo(userInfo => {
+    app.getInitInfo(data => {
       // 更新数据
       this.setData({
-        userInfo: userInfo
+        userInfo: data.userInfo,
+        menu: data.menu
       })
     })
   }

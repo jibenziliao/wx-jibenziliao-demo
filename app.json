@@ -5,7 +5,8 @@
     "pages/view/view",
     "pages/scroll-view/scroll-view",
     "pages/swiper/swiper",
-    "pages/movable-view/movable-view"
+    "pages/movable-view/movable-view",
+    "pages/cover-view/cover-view"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -6,22 +6,40 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
-  getUserInfo (cb) {
+  getInitInfo (cb) {
     let that = this
     if (that.globalData.userInfo) {
-      typeof cb == "function" && cb(that.globalData.userInfo)
+      typeof cb === "function" && cb(that.globalData)
     } else {
       //调用登录接口
       wx.getUserInfo({
         withCredentials: false,
         success: res => {
           that.globalData.userInfo = res.userInfo
-          typeof cb == "function" && cb(that.globalData.userInfo)
+          typeof cb === "function" && cb(that.globalData)
         }
       })
     }
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    menu: [
+      {
+        url: '../view/view',
+        text: 'view'
+      }, {
+        url: '../scroll-view/scroll-view',
+        text: 'scroll-view'
+      }, {
+        url: '../swiper/swiper',
+        text: 'swiper'
+      }, {
+        url: '../movable-view/movable-view',
+        text: 'movable-view'
+      }, {
+        url: '../cover-view/cover-view',
+        text: 'cover-view'
+      }
+    ]
   }
 })
