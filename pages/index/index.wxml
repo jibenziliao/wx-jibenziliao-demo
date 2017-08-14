@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view 
-    bindtap="bindViewTap"
+    bindtap="goLogs"
     class="userinfo">
     <image
       class="userinfo-avatar"
@@ -12,5 +12,16 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="menu-list">
+    <button
+      type="primary"
+      class="button"
+      wx:for="{{menu}}"
+      wx:key="{{index}}"
+      data-url="{{item.url}}"
+      bindtap="goRoute">
+      {{item.text}}
+    </button>
   </view>
 </view>
