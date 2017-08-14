@@ -15,6 +15,9 @@ Page({
       }, {
         url: '../swiper/swiper',
         text: 'swiper'
+      }, {
+        url: '../movable-view/movable-view',
+        text: 'movable-view'
       }
     ]
   },
