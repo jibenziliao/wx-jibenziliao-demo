@@ -19,3 +19,12 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.menu-list {
+  width: 700rpx;
+  margin-top: 40rpx;
+}
+
+.menu-list .button {
+  margin-bottom: 20rpx;
+}

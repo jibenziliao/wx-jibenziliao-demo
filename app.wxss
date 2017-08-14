@@ -7,4 +7,16 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+.bc_green {
+  background-color: green;
+}
+.bc_red {
+  background-color: red;
+}
+.bc_blue {
+  background-color: blue;
+}
+.bc_yellow {
+  background-color: yellow;
+}
