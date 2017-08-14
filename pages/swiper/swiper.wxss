@@ -1,0 +1,7 @@
+.swiper {
+  height: 562.5rpx;
+}
+.slide-image {
+  width: 750rpx;
+  height: 562.5rpx;
+}

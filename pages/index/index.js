@@ -12,6 +12,9 @@ Page({
       }, {
         url: '../scroll-view/scroll-view',
         text: 'scroll-view'
+      }, {
+        url: '../swiper/swiper',
+        text: 'swiper'
       }
     ]
   },
